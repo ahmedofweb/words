@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@100;200;300;400;500;600;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@100;200;300;400;500;600;800&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;800;900&display=swap");
+
+
+.loro{
+  font-family: 'Lora', serif;
+}
+
+.inter {
+  font-family: 'Inter', sans-serif;
+}
+
+.mono {
+  font-family: 'Baloo Bhaina 2', display;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Lora', serif;
+    margin: 0;
+    transition: background 0.2s linear;
+    color: #000;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .dark {
+    color: #fff;
+    background-color: #050505;
+  }
+  .checkbox {
+    opacity: 0;
+    position: absolute;
+  }
+  .label {
+    width: 30px;
+    height: 15px;
+    padding: 2px;
+    background-color:#757575;
+    display: flex;
+    border-radius:50px;
+    align-items: center;
+    justify-content: space-between;
+    transform: scale(1.5);
+  }
+  
+  .ball {
+    width: 11px;
+    height: 11px;
+    background-color: white;
+    position: absolute;
+    border-radius: 50%;
+    transition: transform 0.2s linear;
+  }
+  .active {
+    background-color: #a445ed;
+  }
+  
+  .active .ball {
+    transform: translateX(14px);
+  }
+  
+  .checkbox:checked + .mode img path {
+    fill: #a445ed;
+  }
+.container {
+    width: 100%;
+    max-width: 780px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    gap: 20px;
+}
+
+.logo {
+    margin-right: auto;
+}
+
+
+.dropbtn {
+  background-color: inherit;
+  color: #000;
+  width: 100%;
+  max-width: 120px;
+  height: 80px;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #2d2d2d;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.dropdown {
+  display: flex;
+  position: relative;
+  /* display: inline-block; */
+  margin-right: 26px;
+  align-items: center;
+}
+.dropdown img{
+  margin-right: 20px;
+}
+.dropdown hr{
+  height: 32px;
+  color: #E9E9E9;
+  background-color: #E9E9E9;
+}
+
+.dropdown--title{
+  width: 100%;
+  max-width: 51px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+.dropdown-content {
+  width: 100%;
+  display: none;
+  font-family: serif;
+  position: absolute;
+  top: 60px;
+  left: -10px;
+  background: #ffffff;
+  color: #000;
+  box-shadow: 0px 5px 30px rgb(0, 0, 0, 0.1);
+  border-radius: 16px;
+  padding: 24px;
+  z-index: 1;
+}
+.shadow{
+  box-shadow: 0px 5px 30px rgba(255, 255, 255, 0.969);
+}
+
+.dropdown-content li {
+  text-decoration: none;
+  display: block;
+  font-style: normal;
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.dropdown-content li:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.dropdown-content li:nth-child(2) {
+  font-family: serif;
+}
+
+.dropdown-content li:nth-child(3) {
+  font-family: monospace;
+}
+
+.dropdown-content li:hover {
+  background-color: #fff;
+  color: #a445ed;
+  cursor: pointer;
+  border-radius: 16px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.mode {
+    display: flex;
+}
+
+/* body dark-------------- */
+body.dark .label{
+  background-color: #a445ed;
+}
+body.dark .dropdown--title{
+  color: #fff;
+}
+body.dark .dropdown-content{
+  color: #fff;
+  background-color: #2d2d2d;
+  box-shadow: 0px 5px 30px rgba(208, 0, 255, 0.969);
+}
+body.dark .search{
+  background-color: #2d2d2d;
+}
+body.dark .search input{
+  color: #fff;
+}
+
+
+
+@media screen and (max-width:500px){
+  body{
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .header-container{
+    gap: 10px;
+  }
+  .dropbtn{
+    width: 90px;
+    font-size: 12px;
+    gap: 0.5rem;
+  }
+  .label{
+    width: 30px;
+    height: 15px;
+    padding: 2px;
+  }
+  .ball{
+    width: 11px;
+    height: 11px;
+  }
+  .title{
+    font-size: 50px;
+  }
+}

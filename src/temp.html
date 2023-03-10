@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= htmlWebpackPlugin.options.title %>
+    </title>
+</head>
+<body>
+    <header class="container header-container">
+          <div class="logo">
+            <img src="./images/logo.svg" alt="" width="32" height="37">
+          </div>
+          <div class="dropdown">
+                <button class="dropbtn">
+                  <p class="dropdown--title">Lora</p>
+                  <img src="../images/icon-arrow-down.svg" alt="" width="12" height="6" />
+                </button>
+                <hr>
+                <div class="dropdown-content">
+                  <li id="dropdown--item">Lora</li>
+                  <li id="dropdown--item">Inter</li>
+                  <li id="dropdown--item">Baloo</li>
+                </div>
+            </div>
+            <!-- <img src="./images/icon-arrow-down.svg" alt=""> -->
+
+          <div class="mode">
+                <input type="checkbox" class="checkbox" id="checkbox">
+              <label for="checkbox" class="label">
+                <div class='ball'></div>
+              </label>
+          </div>
+            <img src="./images/icon-moon.svg" alt="">
+    </header>
+
+    <main class="container main-container">
+         <form class="search" id="form">
+            <input id="input" type="text" required>
+            <img src="./images/icon-search.svg" alt="" width="16" height="16">
+         </form>
+         <p class="error"></p>
+
+
+
+         <div class="info">
+            
+         </div>
+         <div class="loader hidden"></div>
+    </main>
+</body>
+</html>
+
+
