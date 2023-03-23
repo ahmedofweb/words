@@ -7,12 +7,6 @@ const errorUI = document.querySelector(".error")
 
 input.focus()
 
-let innerHtml
-const infoHtml = localStorage.getItem("infoHtml")
-
-if(infoHtml){
-    info.innerHTML = `${infoHtml}`
-}
 
 if(input.focus()){
     form.classList.add("border-form")
@@ -112,7 +106,6 @@ function updateUI(data){
        const audio =  new Audio(phonetics[0].audio ? phonetics[0].audio : phonetics[1].audio ? phonetics[1].audio : phonetics[2].audio ? phonetics[2].audio : phonetics[3].audio ? phonetics[3].audio : '')
        return audio.play()
     }
-    innerHtml = info
     
 }
 function updateErrUI(err){
@@ -124,10 +117,7 @@ function updateErrUI(err){
         <p>Sorry pal, we couldn't find definitions for the word you were looking for. You can try the search again at later time or head to the web instead.</p>
 </div>
     `
-    innerHtml = info
 }
-
-localStorage.setItem("infoHtml", innerHtml)
 
 
 

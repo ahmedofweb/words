@@ -214,7 +214,7 @@ body.dark .search input{
     gap: 10px;
   }
   .dropbtn{
-    width: 90px;
+    /* width: 90px; */
     font-size: 12px;
     gap: 0.5rem;
   }

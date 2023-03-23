@@ -6,15 +6,15 @@ let text;
 
 if (fontLocal == "sansSerif") {
   document.body.classList.add("loro");
-  text = "Loro";
+  text = "font:1";
   dropdownTitle.textContent = text;
 } else if (fontLocal == "serif") {
   document.body.classList.add("inter");
-  text = "Inter";
+  text = "font:2";
   dropdownTitle.textContent = text;
 } else if (fontLocal == "monospace") {
   document.body.classList.add("mono");
-  text = "Baloo";
+  text = "font:3";
   dropdownTitle.textContent = text;
 }
 
