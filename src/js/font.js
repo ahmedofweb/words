@@ -5,7 +5,7 @@ const fontLocal = localStorage.getItem("font");
 let text;
 
 if (fontLocal == "sansSerif") {
-  document.body.classList.add("loro");
+  document.body.classList.add("mono");
   text = "font:1";
   dropdownTitle.textContent = text;
 } else if (fontLocal == "serif") {
@@ -13,7 +13,7 @@ if (fontLocal == "sansSerif") {
   text = "font:2";
   dropdownTitle.textContent = text;
 } else if (fontLocal == "monospace") {
-  document.body.classList.add("mono");
+  document.body.classList.add("loro");
   text = "font:3";
   dropdownTitle.textContent = text;
 }

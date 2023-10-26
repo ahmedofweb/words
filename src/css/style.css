@@ -202,10 +202,23 @@ body.dark .search{
 body.dark .search input{
   color: #fff;
 }
+.creator{
+  position: fixed;
+  bottom: 0;
+  right: 20%;
+  border-radius: 10px;
+  padding: 0 5px;
+  color: rgb(0, 83, 225);
+  text-decoration: none;
+  font-size: 10px;
+}
 
 
 
 @media screen and (max-width:500px){
+  .creator{
+    right: 2%;
+  }
   body{
     font-size: 14px;
     line-height: 20px;
